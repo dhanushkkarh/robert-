@@ -96,4 +96,9 @@ def storage():
 
 print("enter roll")
 uname = input()
-storage()
+validate(uname)
+if validate(uname) is True:
+    storage()
+else:
+    print("enter valid roll")
+    SystemExit()
